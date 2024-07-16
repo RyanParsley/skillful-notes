@@ -1,0 +1,14 @@
+{
+  "name": "skillful-notes",
+  "version": "1.0.0",
+  "description": "Presentation about taking notes with markdown and beyond.",
+  "scripts": {
+    "start": "remarker",
+    "build": "remarker build"
+  },
+  "author": "Ryan Parsley",
+  "license": "ISC",
+  "dependencies": {
+    "remarker": "^1.15.0"
+  }
+}
