@@ -31,6 +31,83 @@ tech stack is not a prerequisite.
 
 ---
 
+## A brief history of Markdown
+
+John Gruber made an ergonomic dialect to speed up the writing process for his
+static site blog.
+
+It's not his fault developers got a little "too" into the idea.
+
+---
+
+## Does `X` _support_ markdown
+
+Yes, that's the beauty of markdown. Even in the complete absense of "support"
+you can still read it just fine. I can write markdown on a piece of paper with a
+pen and you can pick up what I'm putting down.
+
+Lack of rich text support in early iPhone created a hole that markdown filled.
+
+Once it was a popular enough defacto standard, devs made support for it better
+and better.
+
+---
+
+## What's the killer feature of Obsidian?
+
+### First place: The community
+
+The Obsidian community is full of thoughtful content creators sharing tips and
+tricks.
+
+### Tied for second: Ergonomics and Extensibility
+
+The features I love most about Obsidian were written by a member of the
+community.
+
+- dataview
+- tracker (habit tracking)
+- periodic notes (better than 1st party daily)
+- templater (better than 1st partty templates)
+
+---
+
+background-image: url(./assets/slidesInVim.png)
+background-size: auto 500px
+background-position: 50% 80%
+
+## What's the killer feature of any decent editor/ IDE?
+
+???
+
+Ok, so why would a dev _not_ want to trick out thier editor instead of using
+Obsidian?
+
+---
+
+## Language Server Protocol
+
+- Markdown Oxide
+- Marksman
+
+### Features
+
+- follow links
+- count references
+- complain about dead links
+
+---
+
+## Documentation in your monorepo
+
+---
+
+## But, ADO can't parse that
+
+BYO parsing if you care to
+
+---
+
 # References
 
 ## Tools I use
@@ -48,3 +125,23 @@ tech stack is not a prerequisite.
 ---
 
 # See Also
+
+## Notes
+
+### Bio
+
+Ryan may be a little _too_ into small sharp tools
+
+### Title/one-liner
+
+Skillful Markdown: Productive writing with _just enough_ complexity
+
+### Presentation synopsis
+
+Sometimes simple tools are hard to wield efficiently. I'll share thoughts I'm
+developing about using plain text for a richer writing experience.
+
+### Who is your audience?
+
+Anyone interested in getting a richer experience from simple writing tools and
+isn't afraid of shell scripts.
