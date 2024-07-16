@@ -2,7 +2,7 @@ class: middle, center, title
 
 # Skillful Notes
 
-## Productive writing with _just_ enough complixity
+## Productive writing with _just_&nbsp;enough&nbsp;complixity
 
 ### Ryan Parsley
 
@@ -10,11 +10,24 @@ class: middle, center, title
 
 ???
 
+Let's talk about where your personal notes stop and shared documentation starts.
+I've been thinking a bit on how to smoothly transition from one class of writing
+to the other and am looking forward to sharing some tips and tricks.
+
 ---
 
-# Yak Shaving!?
+class: middle, center, title
+
+# This is _not_ a presentation about markdown
 
 ???
+
+Markdown is great and I believe I use it to great effectin some of the following
+examples, but this is not a presentation _about_ markdown. This is a
+presentation about thinking and communicating.
+
+It's about selecting the right tool for the job and knowing when adhering to the
+tech stack is not a prerequisite.
 
 ---
 
