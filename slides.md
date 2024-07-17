@@ -31,7 +31,7 @@ tech stack is not a prerequisite.
 
 ---
 
-## A brief history of Markdown
+# A brief history of Markdown
 
 John Gruber made an ergonomic dialect to speed up the writing process for his
 static site blog.
@@ -40,7 +40,7 @@ It's not his fault developers got a little "too" into the idea.
 
 ---
 
-## Does `X` _support_ markdown
+# Does `X` _support_ markdown
 
 Yes, that's the beauty of markdown. Even in the complete absense of "support"
 you can still read it just fine. I can write markdown on a piece of paper with a
@@ -53,14 +53,14 @@ and better.
 
 ---
 
-## What's the killer feature of Obsidian?
+# What's the killer feature of Obsidian?
 
-### First place: The community
+## First place: The community
 
 The Obsidian community is full of thoughtful content creators sharing tips and
 tricks.
 
-### Tied for second: Ergonomics and Extensibility
+## Tied for second: Ergonomics and Extensibility
 
 The features I love most about Obsidian were written by a member of the
 community.
@@ -76,7 +76,7 @@ background-image: url(./assets/slidesInVim.png)
 background-size: auto 500px
 background-position: 50% 80%
 
-## What's the killer feature of any decent editor/ IDE?
+# What's the killer feature of any decent editor/ IDE?
 
 ???
 
@@ -85,12 +85,12 @@ Obsidian?
 
 ---
 
-## Language Server Protocol
+# Language Server Protocol (LSP)
 
 - Markdown Oxide
 - Marksman
 
-### Features
+## Features
 
 - follow links
 - count references
@@ -98,13 +98,17 @@ Obsidian?
 
 ---
 
-## Documentation in your monorepo
+# Documentation in your monorepo
 
 ---
 
-## But, ADO can't parse that
+# But, ADO can't parse that
 
 BYO parsing if you care to
+
+---
+
+# Demo: Bundle Audits from Notes
 
 ---
 
@@ -134,7 +138,7 @@ Ryan may be a little _too_ into small sharp tools
 
 ### Title/one-liner
 
-Skillful Markdown: Productive writing with _just enough_ complexity
+Skillful Notes: Productive writing with _just enough_ complexity
 
 ### Presentation synopsis
 
