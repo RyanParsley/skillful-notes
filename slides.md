@@ -336,6 +336,18 @@ Markdown is just html without the stabby brackets.
 
 ---
 
+background-image: url(./assets/csvNushell.png)
+background-size: auto 130px
+
+# Don't sleep on CSVs
+
+???
+
+They're easy to create and reason about. One can open them as a spreadsheet and
+you can parse them into whatever asset makes sense to best tell their story.
+
+---
+
 # Recutils
 
 > The data is stored as a sequence of records, each record containing an
@@ -343,23 +355,28 @@ Markdown is just html without the stabby brackets.
 >
 > &mdash;[Project Docs](https://www.gnu.org/software/recutils/)
 
----
+???
 
-# Don't sleep on CSVs
-
-They're easy to create and reason about. One can open them as a spreadsheet and
-you can parse them into whatever asset makes sense to best tell their story.
+There's a ton of tools out there you've never used.
 
 ---
 
 # Gnuplot
 
 ```gnuplot
+
 set terminal svg enhanced background rgb 'white';
 set output 'assets/performance-summary.svg';
 plot 'assets/performance-summary.txt' with lines
   title 'Match Performance Over Time';
+
 ```
+
+???
+
+Gnuplot has been actively developed since 1986.
+
+It had a major release this year!
 
 ---
 
@@ -425,7 +442,7 @@ build.
 
 ## A given note
 
-```bash
+```markdown
 ---
 buildTag: 3.55.0
 commit: 8b3280
@@ -446,8 +463,8 @@ frontmatter.
 This was powerful. It helped me understand and craft a narrative of progress
 over time that was not supported by how we operate ADO.
 
-Simple ideas like this can havea profound impact on how you see opportunities and
-challenges.
+Simple ideas like this can havea profound impact on how you see opportunities
+and challenges.
 
 ---
 
