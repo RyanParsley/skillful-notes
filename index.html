@@ -60,7 +60,7 @@ class: middle, center, title
 
 ???
 
-Markdown is great and I believe I use it to great effectin some of the following
+Markdown is great and I believe I use it to great effect in some of the following
 examples, but this is not a presentation _about_ markdown. This is a
 presentation about thinking and communicating.
 
@@ -93,7 +93,7 @@ It's not his fault developers got a little "too" into the idea.
 
 ???
 
-Yes, that's the beauty of markdown. Even in the complete absense of "support"
+Yes, that's the beauty of markdown. Even in the complete absence of "support"
 you can still read it just fine. I can write markdown on a piece of paper with a
 pen and you can pick up what I'm putting down.
 
@@ -102,7 +102,7 @@ Lack of rich text support in early iPhone created a hole that markdown filled.
 Once it was a popular enough defacto standard, devs made support for it better
 and better.
 
-Depending on how you look at it we're talking graceful degredation or
+Depending on how you look at it we're talking graceful degradation or
 progressive enhancement here.
 
 As you venture into advanced markdown territory, focus on that objective. That's
@@ -117,10 +117,10 @@ background-size: auto 400px
 
 ???
 
-Markdown gets a bad rap with respect to compatability because of 2 issues.
+Markdown gets a bad rap with respect to compatibility because of 2 issues.
 
 1. Historically, predicting support was tricky
-2. People's expectaions are poorly calibrated
+2. People's expectations are poorly calibrated
 
 Gruber had by design a very spartan list of tags. He was a writer and designed
 and API of sorts optimized for writing.
@@ -138,7 +138,7 @@ and extend it via your parser's ecosystem
 # ADO
 
 ADO does _not_ support common mark. It claims to support GFM, but seems like it
-more acurately reserves the right to support a subset of GFM while also doing
+more accurately reserves the right to support a subset of GFM while also doing
 it's own thing. That's fine. Stick to the gruber stuff and you'll have a good
 time.
 
@@ -150,7 +150,7 @@ time.
 
 Know that there are various standards and degrees of not following said
 standards. I don't want to get into the weeds on parsers. Whatever language or
-context you're workign with markdown, check for commonmark support and you're
+context you're working with markdown, check for commonmark support and you're
 mostly good to go.
 
 It's worth becoming familiar with the common denominator of various
@@ -168,7 +168,32 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 - Most parsers don't mess up what gruber defined
 - If you're picking a tool, confirm they support CommonMark
 - you can extend CommonMark, through plugins based on the parser you select
-- Compatability is largely solved by 2024
+- Compatibility is largely solved by 2024
+
+---
+
+class: middle, center, title
+
+# This is _not_ a presentation about markdown
+
+???
+
+I said all that because I continue to use markdown as my writing standard of
+choice. There are others. I've considered org mode an neorg but I like the
+ubiquity of markdown and gruber's subset is what I use the vast majority of
+writing. My whole career, I've been making websites, a big chunk of that was
+customizing content management systems.
+
+---
+
+# Structure is good
+
+As you apply structure to your notes... you'll be encouraged to structure your
+thoughts.
+
+## What is the true nature of this data?
+
+It's not always obvious when you stop to think about it.
 
 ---
 
@@ -184,6 +209,20 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 
 ???
 
+Let's talk a little about tools.
+
+This is also not a presentation about obsidian.
+
+I'm not anti-obsidian.
+
+I don't use it for work anymore but I still keep my personal notes on it.
+
+The obsidian community has put out a ton of great content that's helped me focus
+my own thoughts on note taking.
+
+PKM, zettlekasten, second brain are all concepts that I learned through an
+obsidian lense. But you don't _need_ obsidian for any of that.
+
 # First
 
 The Obsidian community is full of thoughtful content creators sharing tips and
@@ -197,7 +236,7 @@ community.
 - dataview
 - tracker (habit tracking)
 - periodic notes (better than 1st party daily)
-- templater (better than 1st partty templates)
+- templater (better than 1st party templates)
 
 ---
 
@@ -210,7 +249,7 @@ community.
 
 ???
 
-Craig pretents like he's not collaborating on this slide, but I know the reason
+Craig pretends like he's not collaborating on this slide, but I know the reason
 there's only one set of footprints.
 
 ---
@@ -236,6 +275,24 @@ I am uneasy making the compromise that this extension demands.
 
 ---
 
+class: middle, center, title
+
+# What does "future proof" mean!?
+
+???
+
+I care about transferable skills. I switched from vim to neovim... when I used
+obsidian for notes, I turned on vim mode. Learning vim motions helps me not
+_just_ in vim.
+
+I like about mermaid syntax, I can type it in ado, I can type it in vim, I can
+render it in mdbook... it's not tightly coupled to any one environment or
+context.
+
+Dataview does not share that.
+
+---
+
 background-image: url(./assets/slidesInVim.png)
 background-size: auto 400px
 background-position: 50% 60%
@@ -244,9 +301,11 @@ background-position: 50% 60%
 
 ???
 
+Powerpoint certainly doesn't share that :D
+
 I hope among the top 5 are... ergonomics and extensibility!
 
-Ok, so why would a dev _not_ want to trick out thier editor instead of using
+Ok, so why would a dev _not_ want to trick out their editor instead of using
 Obsidian?
 
 ---
@@ -266,20 +325,15 @@ Obsidian?
 - count references
 - complain about dead links
 
----
+???
 
-# Killer Feature (side effect)
+LSPs are what fuel your editor's syntax highlighting and code suggestions.
 
-As you apply structure to your notes... you'll be encouraged to structure your
-thoughts.
-
-## What is the true nature of this data?
-
-It's not always obvious when you stop to think about it.
+And they can turbo charge your markdown experience much the same way.
 
 ---
 
-# Documentation in your monorepo
+# Documentation as code
 
 ---
 
@@ -307,9 +361,9 @@ in frontmatter.
 The occasional trivial table is fine like half a dozen columns
 or less and not many more rows. Think less excel alternative and more, neatly
 arrange features and benefits. Just because you write text in markdown doesn't
-mean you _need_ every aspect of yoru docs to be contrained to markdown syntax.
+mean you _need_ every aspect of your docs to be constrained to markdown syntax.
 
-You can _just_ consume data from a csv or whatever works for you.
+You can _just_ consume data from a CSV or whatever works for you.
 
 When you make a website, you write html, but include images, audio, whatever you
 need.
@@ -330,7 +384,7 @@ Markdown is just html without the stabby brackets.
 # Don't sleep on CSVs
 
 They're easy to create and reason about. One can open them as a spreadsheet and
-you can parse them into whatever asset makes sense to best tell thier story.
+you can parse them into whatever asset makes sense to best tell their story.
 
 ---
 
@@ -373,9 +427,168 @@ background-position: 50% 60%
 
 # Gnuplot (output)
 
+???
+
+Gnuplot runs in a pipeline, meaning you can generate a CSV and render a chart
+from that and embed it in your wiki. ADO Markdown doesn't _need_ to support
+javascript or some bespoke plugin. It supports linking up images.
+
 ---
 
-# Demo: Bundle Audits from Notes
+background-image: url(./assets/noPowerInTheVerseCanStopMe.gif)
+background-size: auto 400px
+
+# "Plain" text
+
+---
+
+background-image: url(./assets/folderOfAudits.png)
+background-size: auto 400px
+background-position: 50% 75%
+
+# Bundle Audits from Notes
+
+## Folder stucture
+
+???
+
+Nothing too fancy, every couple of months I'd periodically make notes on the
+build.
+
+---
+
+# Bundle Audits from Notes
+
+## A given note
+
+```bash
+---
+buildTag: 3.55.0
+commit: 8b3280
+bundleSize: 1.88
+---
+
+# 2023 Q4
+
+Write some notes about what was going on at the time, maybe.
+```
+
+???
+
+This is a common enough approach with obsidian and I had a plugin that would
+enable a higher order note to render a chart based on the bundleSize
+frontmatter.
+
+This was powerful. It helped me understand and craft a narrative of progress
+over time that was not supported by how we operate ADO.
+
+Simple ideas like this can havea profound impact on how you see opportunities and
+challenges.
+
+---
+
+# Bundle Audits from Notes
+
+## Script to scrape frontmatter
+
+```nu
+['2019', '2020', '2021', '2022', '2023']
+  | each {|| ls $in}
+  | flatten
+  | where $it.name != matchPerformanceQuarterly.md
+  | each {
+    |file| $"(open $file.name)"
+    | find "bundleSize"
+    | first
+    | split column ":" key value
+    | get value
+  }
+  | flatten
+  | save $output -f
+```
+
+---
+
+# Bundle Audits via pipeline
+
+## Calculate bundle size
+
+```nu
+def calculateInitialBundleSize [] {
+  open dist/stats.json
+    | get assets
+    | where {
+        | asset | $asset.name in [
+          'main.js',
+          'polyfills.js',
+          'my-styles.css',
+          'styles.css',
+          'foundationBase.css',
+          'runtime.js',
+          'scripts.js'
+        ]
+      }
+    | get size
+    | math sum
+}
+```
+
+???
+
+To me, this feels slick. You're using the angular cli to generate a source of
+truth, but exposing the data via a focused lense.
+
+---
+
+# Bundle Audits via pipeline
+
+## Gather context from git
+
+```nu
+def getLastCommitDetails [] {
+  git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD
+  | lines
+  | split column "»¦«" commit subject name email date
+  | first 1
+  | insert initialBundleSize (calculateInitialBundleSize)
+}
+```
+
+???
+
+But, even better... you can combine data in any way that helps you craft a
+narrative. People say "the data can't lie".
+
+A lot of times, it mumbles.
+
+Help it articulate.
+
+---
+
+# Bundle Audits via pipeline
+
+## Save it to a CSV
+
+```nu
+def main [] {
+  open bundleLog.csv
+  | append (getLastCommitDetails)
+  | collect
+  | save bundleLog.csv --force
+}
+```
+
+---
+
+class: middle, center, title
+
+# This is _not_ a presentation about bundle audits
+
+???
+
+I hope seeing some of what I've been noodling with inspires you to solve your
+own problems in delightful ways. If so please share me the weird and creative
+code you write.
 
 ---
 
