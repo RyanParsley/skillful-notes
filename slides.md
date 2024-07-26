@@ -24,6 +24,10 @@ class: middle, center, title
 
 ???
 
+The next couple of slides are going to discuss markdown past and present, but
+this presentation is about crafting a narritive with data. Help your data tell a
+story or better tell a story with data.
+
 Markdown is great and I believe I use it to great effect in some of the following
 examples, but this is not a presentation _about_ markdown. This is a
 presentation about thinking and communicating.
@@ -41,6 +45,7 @@ tech stack is not a prerequisite.
 > &mdash;John Gruber
 
 ???
+
 John Gruber made an ergonomic dialect to speed up the writing process for his
 static site blog.
 
@@ -71,6 +76,9 @@ progressive enhancement here.
 
 As you venture into advanced markdown territory, focus on that objective. That's
 a pretty good north star.
+
+Don't sweat this detail too much. Your data is safe, you may just not have the
+preferred experience in every context.
 
 ---
 
@@ -108,6 +116,8 @@ time.
 
 ---
 
+class: middle, center
+
 # Extensions, that's where they get you
 
 ???
@@ -142,6 +152,12 @@ class: middle, center, title
 
 ???
 
+This is a presentation about crafting a narritive.
+
+This is _about_ telling a story.
+
+Markdown is a reasonable tool, nothing more.
+
 I said all that because I continue to use markdown as my writing standard of
 choice. There are others. I've considered org mode an neorg but I like the
 ubiquity of markdown and gruber's subset is what I use the vast majority of
@@ -150,14 +166,39 @@ customizing content management systems.
 
 ---
 
-# Structure is good
+class: center, middle
+
+> It defines the meaning and structure of web content.
+>
+> &mdash;[MDN (regarding HTML)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+---
+
+background-image: url(./assets/firstPrinciples.webp)
+background-size: auto 400px
+background-position: 50% 60%
+
+# Form and purpose
+
+???
+
+A lot of times a GUI can hide or diminish the structure bit by focusing your
+attention on styling as sort of an arbitrary choice.
+
+I made it green, why? I was feeling sassy
+
+Why is this text a little smaller than that text? oh, to make it fit on the
+slide.
+
+bonkers, I have no patience for this
+
+if your markdown is a wall of similar formatted text, that is a sign you've not
+structured it.
+
+if it looks like a ransom note, it is a sign that you've poorly structured it.
 
 As you apply structure to your notes... you'll be encouraged to structure your
 thoughts.
-
-## What is the true nature of this data?
-
-It's not always obvious when you stop to think about it.
 
 ---
 
@@ -241,7 +282,7 @@ I am uneasy making the compromise that this extension demands.
 
 class: middle, center, title
 
-# What does "future proof" mean!?
+# What does "future&nbsp;proof" mean!?
 
 ???
 
@@ -299,11 +340,105 @@ And they can turbo charge your markdown experience much the same way.
 
 # Documentation as code
 
+## Stuff you may commit via pipelines
+
+- Changelogs
+- Install Checklist
+- Betterer
+
+## Pipeline side effects hither and yon
+
+- Performance Audit
+- Unit Test Coverage
+- Cypress Results
+
+???
+
+The build pipeline is all about generating artifacts.
+
+It does get a little tricky conceptually to commit to the codebase, but we
+already do that in some instances too.
+
 ---
+
+class: middle, center
+
+# Proximity matters
+
+???
+
+Docs near code is better than docs far from code
+
+---
+
+class: middle, center
+
+# What if I put the code in the docs?
+
+???
+
+Madness.
+
+---
+
+# Streetlight effect
+
+> a type of observational bias that occurs when people only search for something
+> where it is easiest to look.
+
+???
+
+Sometimes, the things that are easy to track are not what you need.
+
+Apdex is very inactionable. It's way to abstract. It may tell you that you have
+a problem but completely hides what that problem is from you.
+
+Bundle size directly impacts your performances. We don't monitor that over time.
+
+I assert that making it easy to monitor that will make it more
+
+---
+
+class: middle, center
 
 # But, ADO can't parse that
 
+???
+
+Ok, let's assume I've won you over that we want rich documentation built on
+markdown in our monorepo.
+
+I can hear you saying: "Yeah, but you said ADO doesn't do cool things"
+
+---
+
+background-image: url(./assets/SVGinADO.png)
+background-size: auto 430px
+background-position: 50% 70%
+
+# Doesn't matter
+
+???
+
+Rendering SVG is cool and it does that.
+
+SO, you _just_ need to sort out a way to render assets in the pipeline.
+
 BYO parsing if you care to
+
+---
+
+class: middle, center
+
+# Sounds slow
+
+---
+
+background-image: url(./assets/gnuplotPipelineSpeeds.png)
+background-size: auto 490px
+background-position: 50% 65%
+
+# It's not
 
 ---
 
@@ -417,7 +552,7 @@ javascript or some bespoke plugin. It supports linking up images.
 ---
 
 background-image: url(./assets/noPowerInTheVerseCanStopMe.gif)
-background-size: auto 400px
+background-size: auto 300px
 
 # "Plain" text
 
@@ -432,6 +567,10 @@ background-position: 50% 75%
 ## Folder stucture
 
 ???
+
+Capture data the simplest way you can.
+
+Avoid friction!
 
 Nothing too fancy, every couple of months I'd periodically make notes on the
 build.
@@ -488,6 +627,13 @@ and challenges.
   | save $output -f
 ```
 
+???
+
+Originally, I did what I did how I did it because that's a commmon approach in
+Obsidian.
+
+Then, I wrote this script so obsidian wasn't a dependency.
+
 ---
 
 # Bundle Audits via pipeline
@@ -515,6 +661,11 @@ def calculateInitialBundleSize [] {
 ```
 
 ???
+
+That previous example was the right approach for me at the time given the
+context. Now, I'm trying to share the benefits of watching that with apps I'm
+not regularly involved in. Time to take what I learned about the data and
+promote it to pipeline tasks
 
 To me, this feels slick. You're using the angular cli to generate a source of
 truth, but exposing the data via a focused lense.
@@ -557,6 +708,11 @@ def main [] {
   | collect
   | save bundleLog.csv --force
 }
+
+???
+
+I assert that even if you've never seen nushell before this presentation, you
+can pick up what's going on in this slide.
 ```
 
 ---
@@ -570,6 +726,8 @@ class: middle, center, title
 I hope seeing some of what I've been noodling with inspires you to solve your
 own problems in delightful ways. If so please share me the weird and creative
 code you write.
+
+#foo
 
 ---
 
@@ -592,5 +750,6 @@ code you write.
 # See Also
 
 - [GFM Docs](https://github.github.com/gfm/)
+- [Streetlight Effect](https://en.wikipedia.org/wiki/Streetlight_effect)
 
 ???
