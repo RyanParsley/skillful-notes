@@ -1,4 +1,10 @@
-class: middle, center, title
+---
+theme: nord
+---
+
+<!--
+_class: lead
+-->
 
 # Skillful Notes
 
@@ -8,21 +14,25 @@ class: middle, center, title
 
 #### 2024-08-26
 
-???
+<!--
 
 Let's talk about where your personal notes stop and shared documentation starts.
 I've been thinking a bit on how to smoothly transition from one class of writing
 to the other and am looking forward to sharing some tips and tricks.
 
+-->
+
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
 # This is _not_ a presentation about markdown
 
 (Thanks for the slide Craig)
 
-???
+<!--
 
 The next couple of slides are going to discuss markdown past and present, but
 this presentation is about crafting a narritive with data. Help your data tell a
@@ -35,6 +45,8 @@ presentation about thinking and communicating.
 It's about selecting the right tool for the job and knowing when adhering to the
 tech stack is not a prerequisite.
 
+-->
+
 ---
 
 # A brief history of Markdown
@@ -44,12 +56,14 @@ tech stack is not a prerequisite.
 >
 > &mdash;John Gruber
 
-???
+<!--
 
 John Gruber made an ergonomic dialect to speed up the writing process for his
 static site blog.
 
 It's not his fault developers got a little "too" into the idea.
+
+-->
 
 ---
 
@@ -60,8 +74,7 @@ It's not his fault developers got a little "too" into the idea.
 >
 > &mdash;John Gruber
 
-???
-
+<!--
 Yes, that's the beauty of markdown. Even in the complete absence of "support"
 you can still read it just fine. I can write markdown on a piece of paper with a
 pen and you can pick up what I'm putting down.
@@ -79,15 +92,15 @@ a pretty good north star.
 
 Don't sweat this detail too much. Your data is safe, you may just not have the
 preferred experience in every context.
+-->
 
 ---
 
-background-image: url(./assets/standards.png)
-background-size: auto 400px
-
 # Standards
 
-???
+![w:auto h:480 standards](./assets/standards.png)
+
+<!--
 
 Markdown gets a bad rap with respect to compatibility because of 2 issues.
 
@@ -114,13 +127,17 @@ more accurately reserves the right to support a subset of GFM while also doing
 it's own thing. That's fine. Stick to the gruber stuff and you'll have a good
 time.
 
+-->
+
 ---
 
-class: middle, center
+<!--
+_class: lead
+-->
 
 # Extensions, that's where they get you
 
-???
+<!--
 
 Know that there are various standards and degrees of not following said
 standards. I don't want to get into the weeds on parsers. Whatever language or
@@ -135,6 +152,8 @@ Every parsing option has a different means of extending commonmark. That is very
 powerful, but also the point at which you are compromising on portability. This
 compromise is sometimes reasonable and worth it. Just be aware of it.
 
+-->
+
 ---
 
 # Markdown TLDR
@@ -146,12 +165,13 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
 # This is _not_ a presentation about markdown
 
-???
-
+<!--
 This is a presentation about crafting a narritive.
 
 This is _about_ telling a story.
@@ -163,10 +183,13 @@ choice. There are others. I've considered org mode an neorg but I like the
 ubiquity of markdown and gruber's subset is what I use the vast majority of
 writing. My whole career, I've been making websites, a big chunk of that was
 customizing content management systems.
+-->
 
 ---
 
-class: center, middle
+<!--
+_class: lead
+-->
 
 > It defines the meaning and structure of web content.
 >
@@ -174,13 +197,11 @@ class: center, middle
 
 ---
 
-background-image: url(./assets/firstPrinciples.webp)
-background-size: auto 400px
-background-position: 50% 60%
-
 # Form and purpose
 
-???
+![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
+
+<!--
 
 A lot of times a GUI can hide or diminish the structure bit by focusing your
 attention on styling as sort of an arbitrary choice.
@@ -199,6 +220,7 @@ if it looks like a ransom note, it is a sign that you've poorly structured it.
 
 As you apply structure to your notes... you'll be encouraged to structure your
 thoughts.
+-->
 
 ---
 
@@ -212,7 +234,7 @@ thoughts.
 
 ### Ergonomics and Extensibility
 
-???
+<!--
 
 Let's talk a little about tools.
 
@@ -242,6 +264,7 @@ community.
 - tracker (habit tracking)
 - periodic notes (better than 1st party daily)
 - templater (better than 1st party templates)
+-->
 
 ---
 
@@ -252,10 +275,11 @@ community.
 >
 > &mdash;Craig
 
-???
+<!--
 
-Craig pretends like he's not collaborating on this slide, but I know the reason
-there's only one set of footprints.
+Craig pretends like he's not collaborating on this presentation, but I know the
+reason there's only one set of footprints.
+-->
 
 ---
 
@@ -268,7 +292,7 @@ FROM #poems
 ```
 ````
 
-???
+<!--
 
 Dataview is one of my favorite parts of Obsidian and also a bit of a smell with
 respect to the litmus test of "Does publishing this read well unrendered?"
@@ -277,14 +301,17 @@ It's easy to reason about what that does, but it means nothing outside of
 obsidian.
 
 I am uneasy making the compromise that this extension demands.
+-->
 
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
-# What does "future&nbsp;proof" mean!?
+# What does<br/>&ldquo;future&nbsp;proof&rdquo;<br/>even&nbsp;mean!?
 
-???
+<!--
 
 I care about transferable skills. I switched from vim to neovim... when I used
 obsidian for notes, I turned on vim mode. Learning vim motions helps me not
@@ -295,16 +322,15 @@ render it in mdbook... it's not tightly coupled to any one environment or
 context.
 
 Dataview does not share that.
+-->
 
 ---
 
-background-image: url(./assets/slidesInVim.png)
-background-size: auto 400px
-background-position: 50% 60%
-
 # What's the killer feature of any decent editor/ IDE?
 
-???
+![w:auto h:480 slides in Vim](./assets/slidesInVim.png)
+
+<!--
 
 Powerpoint certainly doesn't share that :D
 
@@ -312,6 +338,7 @@ I hope among the top 5 are... ergonomics and extensibility!
 
 Ok, so why would a dev _not_ want to trick out their editor instead of using
 Obsidian?
+-->
 
 ---
 
@@ -330,11 +357,12 @@ Obsidian?
 - count references
 - complain about dead links
 
-???
+<!--
 
 LSPs are what fuel your editor's syntax highlighting and code suggestions.
 
 And they can turbo charge your markdown experience much the same way.
+-->
 
 ---
 
@@ -352,32 +380,40 @@ And they can turbo charge your markdown experience much the same way.
 - Unit Test Coverage
 - Cypress Results
 
-???
+<!--
 
 The build pipeline is all about generating artifacts.
 
 It does get a little tricky conceptually to commit to the codebase, but we
 already do that in some instances too.
+-->
 
 ---
 
-class: middle, center
+<!--
+_class: lead
+-->
 
 # Proximity matters
 
-???
+<!--
 
 Docs near code is better than docs far from code
 
+-->
+
 ---
 
-class: middle, center
+<!--
+_class: lead
+-->
 
 # What if I put the code in the docs?
 
-???
+<!--
 
 Madness.
+-->
 
 ---
 
@@ -386,7 +422,7 @@ Madness.
 > a type of observational bias that occurs when people only search for something
 > where it is easiest to look.
 
-???
+<!--
 
 Sometimes, the things that are easy to track are not what you need.
 
@@ -396,63 +432,69 @@ a problem but completely hides what that problem is from you.
 Bundle size directly impacts your performances. We don't monitor that over time.
 
 I assert that making it easy to monitor that will make it more
+-->
 
 ---
 
-class: middle, center
+<!--
+_class: lead
+-->
 
 # But, ADO can't parse that
 
-???
+<!--
 
 Ok, let's assume I've won you over that we want rich documentation built on
 markdown in our monorepo.
 
 I can hear you saying: "Yeah, but you said ADO doesn't do cool things"
+-->
 
 ---
 
-background-image: url(./assets/SVGinADO.png)
-background-size: auto 430px
-background-position: 50% 70%
-
 # Doesn't matter
 
-???
+![w:auto h:480 SVGinADO](./assets/SVGinADO.png)
 
+<!--
 Rendering SVG is cool and it does that.
 
 SO, you _just_ need to sort out a way to render assets in the pipeline.
 
 BYO parsing if you care to
+-->
 
 ---
 
-class: middle, center
+<!--
+_class: lead
+-->
 
 # Sounds slow
 
 ---
 
-background-image: url(./assets/gnuplotPipelineSpeeds.png)
-background-size: auto 490px
-background-position: 50% 65%
-
 # It's not
+
+![w:auto h:480 gnuplot](./assets/gnuplotPipelineSpeeds.png)
 
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
 # But Ryan, I don't like editing tables in markdown
 
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
 # Yeah, me neither. Don't do that
 
-???
+<!--
 
 If I'm editing a lot of data manually for some reason, I'm probably tucking that
 in frontmatter.
@@ -468,18 +510,19 @@ When you make a website, you write html, but include images, audio, whatever you
 need.
 
 Markdown is just html without the stabby brackets.
+-->
 
 ---
 
-background-image: url(./assets/csvNushell.png)
-background-size: auto 130px
-
 # Don't sleep on CSVs
 
-???
+![csvNushell](./assets/csvNushell.png)
+
+<!--
 
 They're easy to create and reason about. One can open them as a spreadsheet and
 you can parse them into whatever asset makes sense to best tell their story.
+-->
 
 ---
 
@@ -490,9 +533,10 @@ you can parse them into whatever asset makes sense to best tell their story.
 >
 > &mdash;[Project Docs](https://www.gnu.org/software/recutils/)
 
-???
+<!--
 
 There's a ton of tools out there you've never used.
+-->
 
 ---
 
@@ -507,11 +551,12 @@ plot 'assets/performance-summary.txt' with lines
 
 ```
 
-???
+<!--
 
 Gnuplot has been actively developed since 1986.
 
 It had a major release this year!
+-->
 
 ---
 
@@ -537,36 +582,31 @@ plot
 
 ---
 
-background-image: url(./assets/performance-summary.svg)
-background-size: auto 400px
-background-position: 50% 60%
-
 # Gnuplot (output)
 
-???
+![performanceSummary](./assets/performance-summary.svg)
 
+<!--
 Gnuplot runs in a pipeline, meaning you can generate a CSV and render a chart
 from that and embed it in your wiki. ADO Markdown doesn't _need_ to support
 javascript or some bespoke plugin. It supports linking up images.
+-->
 
 ---
-
-background-image: url(./assets/noPowerInTheVerseCanStopMe.gif)
-background-size: auto 300px
 
 # "Plain" text
 
----
+![noPowerInTheVerseCanStopMe](./assets/noPowerInTheVerseCanStopMe.gif)
 
-background-image: url(./assets/folderOfAudits.png)
-background-size: auto 400px
-background-position: 50% 75%
+---
 
 # Bundle Audits from Notes
 
 ## Folder stucture
 
-???
+![w:auto h:420 folderOfAudits](./assets/folderOfAudits.png)
+
+<!--
 
 Capture data the simplest way you can.
 
@@ -574,6 +614,7 @@ Avoid friction!
 
 Nothing too fancy, every couple of months I'd periodically make notes on the
 build.
+-->
 
 ---
 
@@ -593,7 +634,7 @@ bundleSize: 1.88
 Write some notes about what was going on at the time, maybe.
 ```
 
-???
+<!--
 
 This is a common enough approach with obsidian and I had a plugin that would
 enable a higher order note to render a chart based on the bundleSize
@@ -604,6 +645,7 @@ over time that was not supported by how we operate ADO.
 
 Simple ideas like this can havea profound impact on how you see opportunities
 and challenges.
+-->
 
 ---
 
@@ -627,12 +669,13 @@ and challenges.
   | save $output -f
 ```
 
-???
+<!--
 
 Originally, I did what I did how I did it because that's a commmon approach in
 Obsidian.
 
 Then, I wrote this script so obsidian wasn't a dependency.
+-->
 
 ---
 
@@ -660,7 +703,7 @@ def calculateInitialBundleSize [] {
 }
 ```
 
-???
+<!--
 
 That previous example was the right approach for me at the time given the
 context. Now, I'm trying to share the benefits of watching that with apps I'm
@@ -669,6 +712,7 @@ promote it to pipeline tasks
 
 To me, this feels slick. You're using the angular cli to generate a source of
 truth, but exposing the data via a focused lense.
+-->
 
 ---
 
@@ -686,7 +730,7 @@ def getLastCommitDetails [] {
 }
 ```
 
-???
+<!--
 
 But, even better... you can combine data in any way that helps you craft a
 narrative. People say "the data can't lie".
@@ -694,6 +738,7 @@ narrative. People say "the data can't lie".
 A lot of times, it mumbles.
 
 Help it articulate.
+-->
 
 ---
 
@@ -708,25 +753,28 @@ def main [] {
   | collect
   | save bundleLog.csv --force
 }
-
 ```
 
-???
+<!--
 
 I assert that even if you've never seen nushell before this presentation, you
 can pick up what's going on in this slide.
+-->
 
 ---
 
-class: middle, center, title
+<!--
+_class: lead
+-->
 
 # This is _not_ a presentation about bundle audits
 
-???
+<!--
 
 I hope seeing some of what I've been noodling with inspires you to solve your
 own problems in delightful ways. If so please share me the weird and creative
 code you write.
+-->
 
 ---
 
@@ -742,13 +790,9 @@ code you write.
 - [Remark (markdown powered slides)](https://github.com/remarkjs/remark)
 - [Nushell (alternative shell)](https://www.nushell.sh/)
 
-???
-
 ---
 
 # See Also
 
 - [GFM Docs](https://github.github.com/gfm/)
 - [Streetlight Effect](https://en.wikipedia.org/wiki/Streetlight_effect)
-
-???
