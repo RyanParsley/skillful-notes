@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Presentation about taking notes with markdown and beyond.",
   "scripts": {
-    "start": "remarker",
-    "build": "remarker build"
+    "start": "marp -s ./ & open http://localhost:8080/slides.md",
+    "build": "marp slides.md && cp -r assets ./docs/"
   },
   "author": "Ryan Parsley",
   "license": "ISC",
   "dependencies": {
-    "remarker": "^1.15.0"
+    "@marp-team/marp-cli": "^3.4.0"
   }
 }
