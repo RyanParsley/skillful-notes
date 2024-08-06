@@ -172,7 +172,7 @@ _class: lead
 # This is _not_ a presentation about markdown
 
 <!--
-This is a presentation about crafting a narritive.
+This is a presentation about crafting a narrative.
 
 This is _about_ telling a story.
 
