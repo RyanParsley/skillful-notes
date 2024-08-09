@@ -749,11 +749,12 @@ section dl {
   border: 1px solid #dfe2e5; }
 
 .markdown-body table tr, section table tr {
-  background-color: #fff;
+  background-color: #2E3440;
   border-top: 1px solid #c6cbd1; }
 
 .markdown-body table tr:nth-child(2n), section table tr:nth-child(2n) {
-  background-color: #f6f8fa; }
+  background-color: #3B4252;
+}
 
 .markdown-body img, section img {
   max-width: 100%;
