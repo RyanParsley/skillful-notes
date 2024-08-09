@@ -197,33 +197,6 @@ _class: lead
 
 ---
 
-# Form and purpose
-
-![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
-
-<!--
-
-A lot of times a GUI can hide or diminish the structure bit by focusing your
-attention on styling as sort of an arbitrary choice.
-
-I made it green, why? I was feeling sassy
-
-Why is this text a little smaller than that text? oh, to make it fit on the
-slide.
-
-bonkers, I have no patience for this
-
-if your markdown is a wall of similar formatted text, that is a sign you've not
-structured it.
-
-if it looks like a ransom note, it is a sign that you've poorly structured it.
-
-As you apply structure to your notes... you'll be encouraged to structure your
-thoughts.
--->
-
----
-
 # What's the killer feature of Obsidian?
 
 ## First place
@@ -279,6 +252,33 @@ community.
 
 Craig pretends like he's not collaborating on this presentation, but I know the
 reason there's only one set of footprints.
+-->
+
+---
+
+# Form and purpose
+
+![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
+
+<!--
+
+A lot of times a GUI can hide or diminish the structure bit by focusing your
+attention on styling as sort of an arbitrary choice.
+
+I made it green, why? I was feeling sassy
+
+Why is this text a little smaller than that text? oh, to make it fit on the
+slide.
+
+bonkers, I have no patience for this
+
+if your markdown is a wall of similar formatted text, that is a sign you've not
+structured it.
+
+if it looks like a ransom note, it is a sign that you've poorly structured it.
+
+As you apply structure to your notes... you'll be encouraged to structure your
+thoughts.
 -->
 
 ---
@@ -366,30 +366,6 @@ And they can turbo charge your markdown experience much the same way.
 
 ---
 
-# Documentation as code
-
-## Stuff you may commit via pipelines
-
-- Changelogs
-- Install Checklist
-- Betterer
-
-## Pipeline side effects hither and yon
-
-- Performance Audit
-- Unit Test Coverage
-- Cypress Results
-
-<!--
-
-The build pipeline is all about generating artifacts.
-
-It does get a little tricky conceptually to commit to the codebase, but we
-already do that in some instances too.
--->
-
----
-
 <!--
 _class: lead
 -->
@@ -417,21 +393,26 @@ Madness.
 
 ---
 
-# Streetlight effect
+# Documentation as code
 
-> a type of observational bias that occurs when people only search for something
-> where it is easiest to look.
+## Stuff you may commit via pipelines
+
+- Changelogs
+- Install Checklist
+- Betterer
+
+## Pipeline side effects hither and yon
+
+- Performance Audit
+- Unit Test Coverage
+- Cypress Results
 
 <!--
 
-Sometimes, the things that are easy to track are not what you need.
+The build pipeline is all about generating artifacts.
 
-Apdex is very inactionable. It's way to abstract. It may tell you that you have
-a problem but completely hides what that problem is from you.
-
-Bundle size directly impacts your performances. We don't monitor that over time.
-
-I assert that making it easy to monitor that will make it more
+It does get a little tricky conceptually to commit to the codebase, but we
+already do that in some instances too.
 -->
 
 ---
@@ -600,6 +581,64 @@ javascript or some bespoke plugin. It supports linking up images.
 
 ---
 
+# Streetlight effect
+
+> a type of observational bias that occurs when people only search for something
+> where it is easiest to look.
+
+<!--
+
+Sometimes, the things that are easy to track are not what you need.
+
+Apdex is very inactionable. It's way to abstract. It may tell you that you have
+a problem but completely hides what that problem is from you.
+
+Bundle size directly impacts your performances. We don't monitor that over time.
+
+I assert that making it easy to monitor that will make it more
+
+Aggregate data is problematic with respect to Action Items.
+-->
+
+---
+
+# Bundle Audit Sidebar
+
+| Bundle Size (MB) | Time to Interactive (s) | Speed Index (s) |
+| ---------------- | ----------------------- | --------------- |
+| 0.365            | 0.7                     | 0.8             |
+| 1.36             | 0.9                     | 1.3             |
+| 2.36             | 1.3                     | 1.7             |
+| 3.36             | 4.1                     | 2.1             |
+| 4.36             | 4.9                     | 2.45            |
+| 5.36             | 5.8                     | 2.9             |
+
+<!--
+Apdex is high level to a fault. If you want to impact performance you need to
+get intimatly familiar with the things you can change.
+
+That table is straight out of a wiki post linked in the end and I don't want to
+get lost in the weeds, but do want to levelset on the importance of bundle size.
+
+Bundle size is one of my favorite performance targets because it's a legitimate
+problem in most apps and it happens to be easy to monitor. Roughly every
+megabite costs a second to your Time to Interactive.
+-->
+
+---
+
+# Bundle Audits from Notes
+
+## ![w:auto h:480 data in log](./assets/BundleInBuildLog.png)
+
+<!--
+This data exists and it's visible everytime you run a build, but it's way more
+valuable as something tracked over time. So, I threw that string in a markdown
+file once a quarter and came back to it periodically.
+-->
+
+---
+
 # Bundle Audits from Notes
 
 ## Folder stucture
@@ -705,6 +744,8 @@ def calculateInitialBundleSize [] {
 
 <!--
 
+# But that doesn't scale!
+
 That previous example was the right approach for me at the time given the
 context. Now, I'm trying to share the benefits of watching that with apps I'm
 not regularly involved in. Time to take what I learned about the data and
@@ -712,6 +753,7 @@ promote it to pipeline tasks
 
 To me, this feels slick. You're using the angular cli to generate a source of
 truth, but exposing the data via a focused lense.
+
 -->
 
 ---
