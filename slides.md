@@ -8,7 +8,7 @@ _class: lead
 
 # Skillful Notes
 
-## Productive writing with _just_&nbsp;enough&nbsp;complixity
+## Productive writing with _just_&nbsp;enough&nbsp;complexity
 
 ### Ryan Parsley
 
@@ -16,9 +16,21 @@ _class: lead
 
 <!--
 
-Let's talk about where your personal notes stop and shared documentation starts.
-I've been thinking a bit on how to smoothly transition from one class of writing
-to the other and am looking forward to sharing some tips and tricks.
+I've spent a bit of time thinking about where my personal notes stop and where
+shared documentation starts.
+
+For those of you that don't work closely with me, I tend to post notes eagerly.
+Meaning, I share ideas that I'm still figuring out.
+
+Learning in public like this has been very effective for me. This isn't a
+presentation to convince you about that.
+
+At some point, words you write go from private to public and that hand-off is
+worth thinking about.
+
+I believe there's value in making this seamless, but not at the sacrifice of
+flexibility in your personal notes. Keep that as frictionless as possible or you
+simply won't do.
 
 -->
 
@@ -34,16 +46,27 @@ _class: lead
 
 <!--
 
-The next couple of slides are going to discuss markdown past and present, but
-this presentation is about crafting a narritive with data. Help your data tell a
-story or better tell a story with data.
+Markdown is great and I believe I use it effectively in the following examples,
+but this is not a presentation _about_ markdown. That's an implementation
+detail.
 
-Markdown is great and I believe I use it to great effect in some of the following
-examples, but this is not a presentation _about_ markdown. This is a
-presentation about thinking and communicating.
+This presentation is about thinking and communicating.
 
-It's about selecting the right tool for the job and knowing when adhering to the
-tech stack is not a prerequisite.
+This presentation is about **crafting a narrative**.
+
+Sometimes, the words you write can be more impactful with data to back it up.
+
+Sometimes, you should hang back on the writing while you aggregate some data.
+Then mine a narrative from that.
+
+Sometimes that data needs to be massaged before it can tell any sort of story at
+all.
+
+Don't reach for a spreadsheet! Do not open another browser tab.
+
+Reach for your text editor!
+
+We are developers. We are web developers!
 
 -->
 
@@ -75,6 +98,7 @@ It's not his fault developers got a little "too" into the idea.
 > &mdash;John Gruber
 
 <!--
+
 Yes, that's the beauty of markdown. Even in the complete absence of "support"
 you can still read it just fine. I can write markdown on a piece of paper with a
 pen and you can pick up what I'm putting down.
@@ -92,6 +116,7 @@ a pretty good north star.
 
 Don't sweat this detail too much. Your data is safe, you may just not have the
 preferred experience in every context.
+
 -->
 
 ---
@@ -107,8 +132,8 @@ Markdown gets a bad rap with respect to compatibility because of 2 issues.
 1. Historically, predicting support was tricky
 2. People's expectations are poorly calibrated
 
-Gruber had by design a very spartan list of tags. He was a writer and designed
-and API of sorts optimized for writing.
+Gruber had, by design, a very spartan list of tags. As primarily a writer he
+designed an API of sorts that was primarily optimized for writing.
 
 # Commonmark
 
@@ -139,14 +164,13 @@ _class: lead
 
 <!--
 
-Know that there are various standards and degrees of not following said
-standards. I don't want to get into the weeds on parsers. Whatever language or
-context you're working with markdown, check for commonmark support and you're
-mostly good to go.
+I don't want to get into the weeds on parsers. Whatever language or context
+you're working with markdown, check for commonmark support and you're mostly
+good to go.
 
-It's worth becoming familiar with the common denominator of various
-parsers so you can be aware of what's likely to not work when you port your data
-from one platform to another.
+It's worth becoming familiar with the common denominator of various parsers so
+you can be aware of what's likely to not work when you port your data from one
+platform to another.
 
 Every parsing option has a different means of extending commonmark. That is very
 powerful, but also the point at which you are compromising on portability. This
@@ -163,26 +187,15 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 - you can extend CommonMark, through plugins based on the parser you select
 - Compatibility is largely solved by 2024
 
----
-
 <!--
-_class: lead
--->
 
-# This is _not_ a presentation about markdown
+The gruber bits work everywhere, even when they're not supported!
 
-<!--
-This is a presentation about crafting a narrative.
+Commonmark as a default will get you far if you don't have reason to care.
 
-This is _about_ telling a story.
+Be aware the extensions come at a cost. The graceful degradation story isn't the
+same for all extensions.
 
-Markdown is a reasonable tool, nothing more.
-
-I said all that because I continue to use markdown as my writing standard of
-choice. There are others. I've considered org mode an neorg but I like the
-ubiquity of markdown and gruber's subset is what I use the vast majority of
-writing. My whole career, I've been making websites, a big chunk of that was
-customizing content management systems.
 -->
 
 ---
@@ -195,17 +208,79 @@ _class: lead
 >
 > &mdash;[MDN (regarding HTML)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
+<!--
+
+If you prefer latex, orgmode or or some other solution, that's fine, but you
+probably want to know how to translate to markdown
+
+You want to allow for easy consumption of your content by your team and markdown
+brings a better collaboration story than something like pdf export does.
+
+Markdown is a reasonable lingua franca and ADO plays with it reasonably well.
+
+This is a presentation about crafting a narrative.
+
+This is _about_ telling a story.
+
+Markdown is a reasonable tool, nothing more.
+
+I said all that because I continue to use markdown as my writing standard of
+choice. There are others. I've considered org mode an neorg but I like the
+ubiquity of markdown and gruber's subset is what I use the vast majority of
+writing. My whole career, I've been making websites, a big chunk of that was
+customizing content management systems.
+
+-->
+
 ---
 
-# What's the killer feature of Obsidian?
+<!--
+_class: lead
+-->
 
-## First place
+> It defines the meaning and structure of ~~web~~ content.
 
-### The community
+<!--
 
-## Tied for second
+If you have a solution that helps you structure your thoughts and stays out of
+the way, it doesn't really matter what tool you like.
 
-### Ergonomics and Extensibility
+-->
+
+---
+
+# Form and purpose
+
+![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
+
+<!--
+
+A lot of times a GUI can hide or diminish the structure bit by focusing your
+attention on styling as sort of an arbitrary choice.
+
+I made it green, why? I was feeling sassy
+
+Why is this text a little smaller than that text?
+Oh, to make it fit on the slide.
+
+Bonkers, I have no patience for this
+
+If your markdown is a wall of similar formatted text, that is a sign you've not
+structured it.
+
+If it looks like a ransom note, it is a sign that you've poorly structured it.
+
+As you apply structure to your notes... you'll be encouraged to structure your
+thoughts.
+-->
+
+---
+
+<!--
+_class: lead
+-->
+
+# This is _not_ a presentation about Obsidian
 
 <!--
 
@@ -217,11 +292,25 @@ I'm not anti-obsidian.
 
 I don't use it for work anymore but I still keep my personal notes on it.
 
+-->
+
+---
+
+# Find inspiration in Obsidian
+
+## Killer Features
+
+- Community
+- Ergonomics
+- Extensibility
+
+<!--
+
 The obsidian community has put out a ton of great content that's helped me focus
 my own thoughts on note taking.
 
 PKM, zettlekasten, second brain are all concepts that I learned through an
-obsidian lense. But you don't _need_ obsidian for any of that.
+obsidian lens. But you don't _need_ obsidian for any of that.
 
 # First
 
@@ -241,7 +330,7 @@ community.
 
 ---
 
-# In other words
+# Obsidian Community
 
 > I would look for obsidian plugins that are along that path, and then work
 > backwards into what they are using.
@@ -252,33 +341,13 @@ community.
 
 Craig pretends like he's not collaborating on this presentation, but I know the
 reason there's only one set of footprints.
--->
 
----
+Not only is the obsidian community big and verbose, they're very thoughtful.
+Content creators that talk about Obsidian get deep in the weeds.
 
-# Form and purpose
+Obsidian community is a group of people that express themselves through
+interpretive plain text.
 
-![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
-
-<!--
-
-A lot of times a GUI can hide or diminish the structure bit by focusing your
-attention on styling as sort of an arbitrary choice.
-
-I made it green, why? I was feeling sassy
-
-Why is this text a little smaller than that text? oh, to make it fit on the
-slide.
-
-bonkers, I have no patience for this
-
-if your markdown is a wall of similar formatted text, that is a sign you've not
-structured it.
-
-if it looks like a ransom note, it is a sign that you've poorly structured it.
-
-As you apply structure to your notes... you'll be encouraged to structure your
-thoughts.
 -->
 
 ---
@@ -615,14 +684,14 @@ Aggregate data is problematic with respect to Action Items.
 
 <!--
 Apdex is high level to a fault. If you want to impact performance you need to
-get intimatly familiar with the things you can change.
+get intimately familiar with the things you can change.
 
 That table is straight out of a wiki post linked in the end and I don't want to
-get lost in the weeds, but do want to levelset on the importance of bundle size.
+get lost in the weeds, but do want to level-set on the importance of bundle size.
 
 Bundle size is one of my favorite performance targets because it's a legitimate
 problem in most apps and it happens to be easy to monitor. Roughly every
-megabite costs a second to your Time to Interactive.
+megabyte costs a second to your Time to Interactive.
 -->
 
 ---
@@ -632,7 +701,7 @@ megabite costs a second to your Time to Interactive.
 ## ![w:auto h:480 data in log](./assets/BundleInBuildLog.png)
 
 <!--
-This data exists and it's visible everytime you run a build, but it's way more
+This data exists and it's visible every time you run a build, but it's way more
 valuable as something tracked over time. So, I threw that string in a markdown
 file once a quarter and came back to it periodically.
 -->
@@ -682,7 +751,7 @@ frontmatter.
 This was powerful. It helped me understand and craft a narrative of progress
 over time that was not supported by how we operate ADO.
 
-Simple ideas like this can havea profound impact on how you see opportunities
+Simple ideas like this can have a profound impact on how you see opportunities
 and challenges.
 -->
 
@@ -698,19 +767,19 @@ and challenges.
   | flatten
   | where $it.name != matchPerformanceQuarterly.md
   | each {
-    |file| $"(open $file.name)"
-    | find "bundleSize"
-    | first
-    | split column ":" key value
-    | get value
-  }
+      |file| $"(open $file.name)"
+        | find "bundleSize"
+        | first
+        | split column ":" key value
+        | get value
+    }
   | flatten
   | save $output -f
 ```
 
 <!--
 
-Originally, I did what I did how I did it because that's a commmon approach in
+Originally, I did what I did how I did it because that's a common approach in
 Obsidian.
 
 Then, I wrote this script so obsidian wasn't a dependency.
@@ -751,8 +820,8 @@ context. Now, I'm trying to share the benefits of watching that with apps I'm
 not regularly involved in. Time to take what I learned about the data and
 promote it to pipeline tasks
 
-To me, this feels slick. You're using the angular cli to generate a source of
-truth, but exposing the data via a focused lense.
+To me, this feels slick. You're using the angular CLI to generate a source of
+truth, but exposing the data via a focused lens.
 
 -->
 
