@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Presentation about taking notes with markdown and beyond.",
   "scripts": {
-    "start": "marp -s ./ & open http://localhost:8080/slides.md",
+    "start": "marp -s ./ && open http://localhost:8080/slides.md",
     "build": "marp slides.md && cp -r assets ./docs/"
   },
   "author": "Ryan Parsley",
