@@ -564,9 +564,24 @@ Markdown is just html without the stabby brackets.
 
 ---
 
+# Just about everything makes JSON
+
+- Unit Tests
+- Linters
+- Angular CLI
+
+<!--
+
+Think about the amazing things you can do with json. This is your super power!
+Don't overlook it _just_ because this json happens to be a static asset.
+
+-->
+
+---
+
 # Don't sleep on CSVs
 
-![csvNushell](./assets/csvNushell.png)
+![csvNushell](./assets/CSV-view-options.jpg)
 
 <!--
 
@@ -787,6 +802,18 @@ Then, I wrote this script so obsidian wasn't a dependency.
 
 ---
 
+<!--
+_class: lead
+-->
+
+# Dude, I don't care to maintain a journal
+
+<!--
+
+-->
+
+---
+
 # Bundle Audits via pipeline
 
 ## Calculate bundle size
@@ -870,6 +897,33 @@ def main [] {
 
 I assert that even if you've never seen nushell before this presentation, you
 can pick up what's going on in this slide.
+-->
+
+---
+
+# Remember this?
+
+![performanceSummary](./assets/performance-summary.svg)
+
+<!--
+-->
+
+---
+
+# There's an update
+
+![performanceSummary](./assets/performance-summary2.svg)
+
+<!--
+-->
+
+---
+
+# What changed?
+
+![performanceSummary](./assets/performance-summary-annotated.png)
+
+<!--
 -->
 
 ---
