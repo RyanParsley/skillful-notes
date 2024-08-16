@@ -16,21 +16,25 @@ _class: lead
 
 <!--
 
-I've spent a bit of time thinking about where my personal notes stop and where
-shared documentation starts.
-
 For those of you that don't work closely with me, I tend to post notes eagerly.
+
 Meaning, I share ideas that I'm still figuring out.
 
-Learning in public like this has been very effective for me. This isn't a
+Learning in public like this has been very effective for me, but this isn't a
 presentation to convince you about that.
 
-At some point, words you write go from private to public and that hand-off is
-worth thinking about.
+Whatever cadence you _release_ you words into the world, I'm sure that you tend
+to create things privately and share when you feel it's some level of "done".
 
-I believe there's value in making this seamless, but not at the sacrifice of
-flexibility in your personal notes. Keep that as frictionless as possible or you
-simply won't do.
+I believe there's value in making this publish workflow seamless. To that end, I
+think using the same or similar tools the whole way through is a reasonable
+goal.
+
+That's why I write my notes, documentation, presentations and well pretty much
+everything in markdown using vim. Vim may not be your flavor of fricionless.
+That's fine. Use whatever editor works for you.
+
+Keep writing and publishing as frictionless as possible or you simply won't do.
 
 -->
 
@@ -47,22 +51,28 @@ _class: lead
 <!--
 
 Markdown is great and I believe I use it effectively in the following examples,
-but this is not a presentation _about_ markdown. That's an implementation
-detail.
+but this is **not** a presentation _about_ markdown. That's simply an
+implementation detail.
 
-This presentation is about thinking and communicating.
+This presentation is about communicating efficiently.
 
-This presentation is about **crafting a narrative**.
+This presentation is about **crafting a narrative**. Using data to help you tell
+your story and using code to help you present and best leverage that data.
 
-Sometimes, the words you write can be more impactful with data to back it up.
+So, this is a presentation about using code to tell a story.
 
-Sometimes, you should hang back on the writing while you aggregate some data.
-Then mine a narrative from that.
+Sometimes, the words you write can be more impactful with data to back you up.
+Maybe a table of figures will suffice, maybe you _want_ a chart. But you *need*
+data to tell the story.
 
-Sometimes that data needs to be massaged before it can tell any sort of story at
-all.
+Sometimes, you start with a heap of data and you want to help tell it's story.
+You should hang back on the writing while you aggregate some data.
+Then, mine a narrative from that. You may know there's a story to tell, but don't
+know what it is until after you've
 
-Don't reach for a spreadsheet! Do not open another browser tab.
+Don't reach for a spreadsheet!
+
+Do not open another browser tab.
 
 Reach for your text editor!
 
@@ -80,6 +90,9 @@ We are developers. We are web developers!
 > &mdash;John Gruber
 
 <!--
+
+And that is probably at the heart of why markdown speaks to me. It is of the
+internet.
 
 John Gruber made an ergonomic dialect to speed up the writing process for his
 static site blog.
@@ -99,23 +112,51 @@ It's not his fault developers got a little "too" into the idea.
 
 <!--
 
-Yes, that's the beauty of markdown. Even in the complete absence of "support"
-you can still read it just fine. I can write markdown on a piece of paper with a
-pen and you can pick up what I'm putting down.
-
-Lack of rich text support in early iPhone created a hole that markdown filled.
-
-Once it was a popular enough defacto standard, devs made support for it better
-and better.
+Even in the complete absence of "support" you can still read it just fine. I can
+write markdown on a piece of paper with a pen and you can pick up what I'm
+putting down.
 
 Depending on how you look at it we're talking graceful degradation or
 progressive enhancement here.
 
-As you venture into advanced markdown territory, focus on that objective. That's
-a pretty good north star.
+That is a killer feature of markdown.
+-->
 
-Don't sweat this detail too much. Your data is safe, you may just not have the
-preferred experience in every context.
+---
+
+<!--
+_class: lead
+-->
+
+# What does<br/>&ldquo;future&nbsp;proof&rdquo;<br/>even&nbsp;mean!?
+
+<!--
+
+You hear people say "future proof", what does that mean? If you write in
+markdown and thanos blips all parsers out of existance, you can still read your
+notes just fine. So long as you can view plain text, you have no data loss.
+
+It's interesting, because the inverse situation is also responsible for how
+prolific markdown is.
+
+_Lack of rich text support_ in early iPhone created a hole that markdown filled.
+
+In the days that predated support, markdown thrived.
+
+Once it was a popular enough defacto standard, devs made support for it better
+and better.
+
+It's hard to know how much affordance you should embrace by coupling ot
+implementation details, but let that future proof idea help you sniff test if
+you're going in the right direction or not.
+
+I care about transferable skills. I switched from vim to neovim... when I used
+obsidian for notes, I turned on vim mode. Learning vim motions helps me not
+_just_ in vim.
+
+I like about mermaid syntax, I can type it in ado, I can type it in vim, I can
+render it in mdbook... it's not tightly coupled to any one environment or
+context.
 
 -->
 
@@ -342,7 +383,10 @@ community.
 Craig pretends like he's not collaborating on this presentation, but I know the
 reason there's only one set of footprints.
 
-Not only is the obsidian community big and verbose, they're very thoughtful.
+There is wisdom in this community that transcends Obsidian. It just happens
+to be expressed in Obsidian. Don't get hung up on that implementation detail.
+
+Not only is the Obsidian community big and verbose, they're very thoughtful.
 Content creators that talk about Obsidian get deep in the weeds.
 
 Obsidian community is a group of people that express themselves through
@@ -370,27 +414,13 @@ It's easy to reason about what that does, but it means nothing outside of
 obsidian.
 
 I am uneasy making the compromise that this extension demands.
--->
 
----
+As this only adds value in the context of obsidian and no extensions exist in
+any other context, this is not "future proof". This is not a transferable skill
+unless you are willing to write an implementation to take with you. This could
+be reasonable, but that's beyond the scope of this presentation (maybe next
+quarter).
 
-<!--
-_class: lead
--->
-
-# What does<br/>&ldquo;future&nbsp;proof&rdquo;<br/>even&nbsp;mean!?
-
-<!--
-
-I care about transferable skills. I switched from vim to neovim... when I used
-obsidian for notes, I turned on vim mode. Learning vim motions helps me not
-_just_ in vim.
-
-I like about mermaid syntax, I can type it in ado, I can type it in vim, I can
-render it in mdbook... it's not tightly coupled to any one environment or
-context.
-
-Dataview does not share that.
 -->
 
 ---
@@ -445,19 +475,6 @@ _class: lead
 
 Docs near code is better than docs far from code
 
--->
-
----
-
-<!--
-_class: lead
--->
-
-# What if I put the code in the docs?
-
-<!--
-
-Madness.
 -->
 
 ---
@@ -591,20 +608,6 @@ you can parse them into whatever asset makes sense to best tell their story.
 
 ---
 
-# Recutils
-
-> The data is stored as a sequence of records, each record containing an
-> arbitrary number of named fields.
->
-> &mdash;[Project Docs](https://www.gnu.org/software/recutils/)
-
-<!--
-
-There's a ton of tools out there you've never used.
--->
-
----
-
 # Gnuplot
 
 ```gnuplot
@@ -621,6 +624,12 @@ plot 'assets/performance-summary.txt' with lines
 Gnuplot has been actively developed since 1986.
 
 It had a major release this year!
+
+So don't dismiss it as a 40 year old software :D
+
+I can't predict the future but 40 years of active development gives me warm
+fuzzy feelings about this tool.
+
 -->
 
 ---
@@ -652,9 +661,11 @@ plot
 ![performanceSummary](./assets/performance-summary.svg)
 
 <!--
+
 Gnuplot runs in a pipeline, meaning you can generate a CSV and render a chart
 from that and embed it in your wiki. ADO Markdown doesn't _need_ to support
 javascript or some bespoke plugin. It supports linking up images.
+
 -->
 
 ---
@@ -798,6 +809,10 @@ Originally, I did what I did how I did it because that's a common approach in
 Obsidian.
 
 Then, I wrote this script so obsidian wasn't a dependency.
+
+I used NuShell. Hopefully you caught Bradley's presentation earlier, if not,
+check out the recording to hear more about this language. I use it locally and
+it's used in support of at least 3 app's pipelines at this time.
 -->
 
 ---
@@ -809,6 +824,13 @@ _class: lead
 # Dude, I don't care to maintain a journal
 
 <!--
+
+# But that doesn't scale!
+
+That previous example was the right approach for me at the time given the
+context. Now, I'm trying to share the benefits of watching that with apps I'm
+not regularly involved in. Time to take what I learned about the data and
+promote it to pipeline tasks
 
 -->
 
@@ -839,13 +861,6 @@ def calculateInitialBundleSize [] {
 ```
 
 <!--
-
-# But that doesn't scale!
-
-That previous example was the right approach for me at the time given the
-context. Now, I'm trying to share the benefits of watching that with apps I'm
-not regularly involved in. Time to take what I learned about the data and
-promote it to pipeline tasks
 
 To me, this feels slick. You're using the angular CLI to generate a source of
 truth, but exposing the data via a focused lens.
@@ -897,6 +912,9 @@ def main [] {
 
 I assert that even if you've never seen nushell before this presentation, you
 can pick up what's going on in this slide.
+
+Even at this level, the code is telling you it's own story.
+
 -->
 
 ---
@@ -906,6 +924,10 @@ can pick up what's going on in this slide.
 ![performanceSummary](./assets/performance-summary.svg)
 
 <!--
+
+This chart made an apearence earlier in the presentation. It was generated by
+Gnuplot.
+
 -->
 
 ---
@@ -915,6 +937,19 @@ can pick up what's going on in this slide.
 ![performanceSummary](./assets/performance-summary2.svg)
 
 <!--
+What! They trimmed nearly 1MB off that initial bundle!
+
+800kb is more accurate.
+
+That shows the app's bundle size at an all time low for the year, now.
+
+Notice how this story is way more intersting with all this data?
+
+You was falling asleep with me droning on about semantic web yada yada
+
+Then you see that chart dip drastically and you're sitting on the edge of your
+seat reaching for a pen.
+
 -->
 
 ---
@@ -924,6 +959,12 @@ can pick up what's going on in this slide.
 ![performanceSummary](./assets/performance-summary-annotated.png)
 
 <!--
+So what happened?
+
+The upward drift was a secret problem. The technique illustrated in this
+presentation exposed the issue. I brought it to Anthony's attention, he
+corrected a years worth of slippage faster than you can say "apdex".
+
 -->
 
 ---
@@ -939,6 +980,7 @@ _class: lead
 I hope seeing some of what I've been noodling with inspires you to solve your
 own problems in delightful ways. If so please share me the weird and creative
 code you write.
+
 -->
 
 ---
