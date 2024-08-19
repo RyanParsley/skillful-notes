@@ -994,7 +994,7 @@ code you write.
 - [mise (polyglot version manager)](https://mise.jdx.dev/getting-started.html)
 - [WezTerm (terminal emulator)](https://wezfurlong.org/wezterm/index.html)
 - [Neovim (editor)](https://neovim.io/)
-- [Remark (markdown powered slides)](https://github.com/remarkjs/remark)
+- [~~Remark~~](https://github.com/remarkjs/remark) [Marp (markdown powered slides)](https://marp.app/)
 - [Nushell (alternative shell)](https://www.nushell.sh/)
 
 ---
