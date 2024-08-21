@@ -16,7 +16,8 @@ _class: lead
 
 <!--
 
-I type a lot of words.
+I type words and I type them for different reasons. I type them _for_ different
+audiences and contexts. But I try to write them with the same tools.
 
 Sometimes I write to help other people figure stuff out in the form of
 documentation or wiki posts.
@@ -60,11 +61,6 @@ _class: lead
 Markdown is great and I believe I use it effectively in the following examples,
 but this is **not** a presentation _about_ markdown. That's simply an
 implementation detail.
-
-If you don't like markdown, file an issue with github. It's the defacto
-standard for documentation so best get comfortable with it. If it's the lingua
-franca of github, ADO, and any static site generator you care to use, I figure
-you may as well write your personal notes in it too.
 
 This presentation is about **crafting a narrative**.
 
@@ -111,7 +107,15 @@ internet.
 John Gruber made an ergonomic dialect to speed up the writing process for his
 static site blog.
 
-It's not his fault developers got a little "too" into the idea.
+If you don't like markdown, file an issue with github. It's the defacto
+standard for documentation so best get comfortable with it.
+
+If it's the lingua franca of github, ADO, and any static site generator you care
+to use.
+
+If you're not a developer and markdown feels complicated, know that this wasn't
+invented by a developer. It was invented by a writer who was looking for
+efficiency.
 
 -->
 
@@ -126,52 +130,16 @@ It's not his fault developers got a little "too" into the idea.
 
 <!--
 
-Even in the complete absence of "support" you can still read it just fine. I can
-write markdown on a piece of paper with a pen and you can pick up what I'm
-putting down.
+Even if the answer is no, the expereince is pretty good.
+
+That is a killer feature of markdown.
 
 Depending on how you look at it we're talking graceful degradation or
 progressive enhancement here.
 
-That is a killer feature of markdown.
--->
-
----
-
-<!--
-_class: lead
--->
-
-# What does<br/>&ldquo;future&nbsp;proof&rdquo;<br/>even&nbsp;mean!?
-
-<!--
-
-You hear people say "future proof", what does that mean? If you write in
-markdown and Thanos _blips_ all parsers out of existance, you can still read your
-notes just fine.
-
-So long as you can view plain text, you have no data loss.
-
-It's interesting, because the inverse situation is also responsible for how
-prolific markdown is.
-
-_Lack of rich text support_ in early iPhone created a hole that markdown filled.
-
-In the days that predated support, markdown thrived.
-
-Once it was a popular enough defacto standard, devs made support for it better
-and better.
-
-## Everything comes at a cost
-
-It's hard to know how much affordance you should embrace by coupling ot
-implementation details, but let that future proof idea help you sniff test if
-you're going in the right direction or not.
-
-## I care about transferable skills.
-
-I switched from vim to neovim... when I used obsidian for notes, I turned on vim
-mode. Learning vim motions helps me not _just_ in vim.
+Even in the complete absence of "support" you can still read it just fine. I can
+write markdown on a piece of paper with a pen and you can pick up what I'm
+putting down.
 
 -->
 
@@ -187,6 +155,8 @@ _class: lead
 
 Gruber had, by design, a very spartan list of tags. As primarily a writer he
 designed an API of sorts that was primarily optimized for writing.
+
+It's not his fault developers got a little "too" into the idea.
 
 Commonmark is the gold standard and GFM is nigh indistinguishable from it. Any
 parser or renderer worth it's salt will support both so you don't need to work
@@ -214,26 +184,6 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 
 ---
 
-# Markdown TLDR
-
-- Parsers don't mess up what Gruber specified
-- If you're picking a tool, confirm they support CommonMark
-- You can extend CommonMark, through plugins based on the parser you select
-- Compatibility is not _really_ and issue by 2024
-
-<!--
-
-The gruber bits work everywhere, even when they're not supported!
-
-Commonmark as a default will get you far if you don't have reason to care.
-
-Be aware the extensions come at a cost. The graceful degradation story isn't the
-same for all extensions.
-
--->
-
----
-
 <!--
 _class: lead
 -->
@@ -250,19 +200,7 @@ I'm not anti-obsidian.
 
 I don't use it for work anymore but I still keep my personal notes on it.
 
--->
-
----
-
-# Find inspiration in Obsidian
-
-## Killer Features
-
-- Community
-- Ergonomics
-- Extensibility
-
-<!--
+Obsidian is a wonderful lense to observe writing through.
 
 The obsidian community has put out a ton of great content that's helped me focus
 my own thoughts on note taking.
@@ -270,20 +208,6 @@ my own thoughts on note taking.
 PKM, zettlekasten, second brain are all concepts that I learned through an
 obsidian lens. But you don't _need_ obsidian for any of that.
 
-# First
-
-The Obsidian community is full of thoughtful content creators sharing tips and
-tricks.
-
-# Second
-
-The features I love most about Obsidian were written by a member of the
-community.
-
-- dataview
-- tracker (habit tracking)
-- periodic notes (better than 1st party daily)
-- templater (better than 1st party templates)
 -->
 
 ---
