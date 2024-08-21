@@ -16,6 +16,13 @@ _class: lead
 
 <!--
 
+I type a lot of words.
+
+Sometimes I write to help other people figure stuff out in the form of
+documentation or wiki posts.
+
+Sometimes, I'm writing so I can figure something out.
+
 For those of you that don't work closely with me, I tend to post notes eagerly.
 
 Meaning, I share ideas that I'm still figuring out.
@@ -54,10 +61,17 @@ Markdown is great and I believe I use it effectively in the following examples,
 but this is **not** a presentation _about_ markdown. That's simply an
 implementation detail.
 
+If you don't like markdown, file an issue with github. It's the defacto
+standard for documentation so best get comfortable with it. If it's the lingua
+franca of github, ADO, and any static site generator you care to use, I figure
+you may as well write your personal notes in it too.
+
+This presentation is about **crafting a narrative**.
+
 This presentation is about communicating efficiently.
 
-This presentation is about **crafting a narrative**. Using data to help you tell
-your story and using code to help you present and best leverage that data.
+Using data to help you tell your story and using code to help you present and
+best leverage that data.
 
 So, this is a presentation about using code to tell a story.
 
@@ -133,8 +147,10 @@ _class: lead
 <!--
 
 You hear people say "future proof", what does that mean? If you write in
-markdown and thanos blips all parsers out of existance, you can still read your
-notes just fine. So long as you can view plain text, you have no data loss.
+markdown and Thanos _blips_ all parsers out of existance, you can still read your
+notes just fine.
+
+So long as you can view plain text, you have no data loss.
 
 It's interesting, because the inverse situation is also responsible for how
 prolific markdown is.
@@ -146,52 +162,16 @@ In the days that predated support, markdown thrived.
 Once it was a popular enough defacto standard, devs made support for it better
 and better.
 
+## Everything comes at a cost
+
 It's hard to know how much affordance you should embrace by coupling ot
 implementation details, but let that future proof idea help you sniff test if
 you're going in the right direction or not.
 
-I care about transferable skills. I switched from vim to neovim... when I used
-obsidian for notes, I turned on vim mode. Learning vim motions helps me not
-_just_ in vim.
+## I care about transferable skills.
 
-I like about mermaid syntax, I can type it in ado, I can type it in vim, I can
-render it in mdbook... it's not tightly coupled to any one environment or
-context.
-
--->
-
----
-
-# Standards
-
-![w:auto h:480 standards](./assets/standards.png)
-
-<!--
-
-Markdown gets a bad rap with respect to compatibility because of 2 issues.
-
-1. Historically, predicting support was tricky
-2. People's expectations are poorly calibrated
-
-Gruber had, by design, a very spartan list of tags. As primarily a writer he
-designed an API of sorts that was primarily optimized for writing.
-
-# Commonmark
-
-This is a reasonable place to start if you want to consider a superset of what
-Gruber set out to achieve.
-
-# GFM
-
-Strict superset of common mark now, but really, I'd just stick to Common mark
-and extend it via your parser's ecosystem
-
-# ADO
-
-ADO does _not_ support common mark. It claims to support GFM, but seems like it
-more accurately reserves the right to support a subset of GFM while also doing
-it's own thing. That's fine. Stick to the gruber stuff and you'll have a good
-time.
+I switched from vim to neovim... when I used obsidian for notes, I turned on vim
+mode. Learning vim motions helps me not _just_ in vim.
 
 -->
 
@@ -205,9 +185,22 @@ _class: lead
 
 <!--
 
+Gruber had, by design, a very spartan list of tags. As primarily a writer he
+designed an API of sorts that was primarily optimized for writing.
+
+Commonmark is the gold standard and GFM is nigh indistinguishable from it. Any
+parser or renderer worth it's salt will support both so you don't need to work
+about compatibility like the olden times.
+
 I don't want to get into the weeds on parsers. Whatever language or context
 you're working with markdown, check for commonmark support and you're mostly
 good to go.
+
+## Who's feature is this anyway?
+
+I like about mermaid syntax, I can type it in ado, I can type it in vim, I can
+render it in mdbook... it's not tightly coupled to any one environment or
+context.
 
 It's worth becoming familiar with the common denominator of various parsers so
 you can be aware of what's likely to not work when you port your data from one
@@ -223,10 +216,10 @@ compromise is sometimes reasonable and worth it. Just be aware of it.
 
 # Markdown TLDR
 
-- Most parsers don't mess up what gruber defined
+- Parsers don't mess up what Gruber specified
 - If you're picking a tool, confirm they support CommonMark
-- you can extend CommonMark, through plugins based on the parser you select
-- Compatibility is largely solved by 2024
+- You can extend CommonMark, through plugins based on the parser you select
+- Compatibility is not _really_ and issue by 2024
 
 <!--
 
@@ -237,82 +230,6 @@ Commonmark as a default will get you far if you don't have reason to care.
 Be aware the extensions come at a cost. The graceful degradation story isn't the
 same for all extensions.
 
--->
-
----
-
-<!--
-_class: lead
--->
-
-> It defines the meaning and structure of web content.
->
-> &mdash;[MDN (regarding HTML)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
-<!--
-
-If you prefer latex, orgmode or or some other solution, that's fine, but you
-probably want to know how to translate to markdown
-
-You want to allow for easy consumption of your content by your team and markdown
-brings a better collaboration story than something like pdf export does.
-
-Markdown is a reasonable lingua franca and ADO plays with it reasonably well.
-
-This is a presentation about crafting a narrative.
-
-This is _about_ telling a story.
-
-Markdown is a reasonable tool, nothing more.
-
-I said all that because I continue to use markdown as my writing standard of
-choice. There are others. I've considered org mode an neorg but I like the
-ubiquity of markdown and gruber's subset is what I use the vast majority of
-writing. My whole career, I've been making websites, a big chunk of that was
-customizing content management systems.
-
--->
-
----
-
-<!--
-_class: lead
--->
-
-> It defines the meaning and structure of ~~web~~ content.
-
-<!--
-
-If you have a solution that helps you structure your thoughts and stays out of
-the way, it doesn't really matter what tool you like.
-
--->
-
----
-
-# Form and purpose
-
-![w:auto h:480 firstPrinciples](./assets/firstPrinciples.webp)
-
-<!--
-
-A lot of times a GUI can hide or diminish the structure bit by focusing your
-attention on styling as sort of an arbitrary choice.
-
-I made it green, why? I was feeling sassy
-
-Why is this text a little smaller than that text?
-Oh, to make it fit on the slide.
-
-Bonkers, I have no patience for this
-
-If your markdown is a wall of similar formatted text, that is a sign you've not
-structured it.
-
-If it looks like a ransom note, it is a sign that you've poorly structured it.
-
-As you apply structure to your notes... you'll be encouraged to structure your
-thoughts.
 -->
 
 ---
@@ -431,6 +348,13 @@ quarter).
 
 <!--
 
+What skills do you want to get good at?
+
+You only get better at what you practice.
+
+I don't care to get great at ppt or excell in the same way I aspire to improve
+my code editing skills.
+
 Powerpoint certainly doesn't share that :D
 
 I hope among the top 5 are... ergonomics and extensibility!
@@ -473,7 +397,17 @@ _class: lead
 
 <!--
 
-Docs near code is better than docs far from code
+Did you know you can click around in ADO to define folder in your monorepo as
+the source of your wiki?
+
+Just because some people read wikis in the browser doesn't mean you should edit
+them there.
+
+If you're using the same tool to write your docs and your code...
+
+Why not put your docs in the same place as your code?
+
+It opens you up to a whole world of possibilities.
 
 -->
 
