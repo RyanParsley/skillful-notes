@@ -16,34 +16,45 @@ _class: lead
 
 <!--
 
-I type words and I type them for different reasons. I type them _for_ different
-audiences and contexts. But I try to write them with the same tools.
-
-Sometimes I write to help other people figure stuff out in the form of
-documentation or wiki posts.
+Sometimes I write to help other people figure stuff out.
+This takes the form of documentation or wiki posts.
 
 Sometimes, I'm writing so I can figure something out.
+
+My notes, or PKM, if you're fancy like Craig
+
+-->
+
+---
+
+<!--
+_class: lead
+-->
+
+> Writing is a concentrated form of thinking.
+> ...to define things, define muddled experience in economical ways
+>
+> &mdash;Don DeLillo
+
+<!--
 
 For those of you that don't work closely with me, I tend to post notes eagerly.
 
 Meaning, I share ideas that I'm still figuring out.
 
+Shoot, I'm actively wresting with 1/3 of the content in this presentation!
+
 Learning in public like this has been very effective for me, but this isn't a
 presentation to convince you about that.
 
-Whatever cadence you _release_ you words into the world, I'm sure that you tend
-to create things privately and share when you feel it's some level of "done".
-
-I believe there's value in making this publish workflow seamless. To that end, I
-think using the same or similar tools the whole way through is a reasonable
-goal.
+Whatever cadence you _release_ you words into the world, I believe there's value
+in making this publish workflow seamless.
 
 That's why I write my notes, documentation, presentations and well pretty much
-everything in markdown using vim. Vim may not be your flavor of fricionless.
+everything in markdown using vim. Vim may not be your flavor of frictionless.
 That's fine. Use whatever editor works for you.
 
 Keep writing and publishing as frictionless as possible or you simply won't do.
-
 -->
 
 ---
@@ -117,6 +128,11 @@ If you're not a developer and markdown feels complicated, know that this wasn't
 invented by a developer. It was invented by a writer who was looking for
 efficiency.
 
+Bouncing from gui to gui learning differences between similar but not compatible
+interfaces eats time and energy.
+
+Sometimes richness brings affordances, it always brings complexity.
+
 -->
 
 ---
@@ -130,9 +146,9 @@ efficiency.
 
 <!--
 
-Even if the answer is no, the expereince is pretty good.
+Even if the answer is no, the experience is pretty good.
 
-That is a killer feature of markdown.
+That is the killer feature of markdown.
 
 Depending on how you look at it we're talking graceful degradation or
 progressive enhancement here.
@@ -200,7 +216,7 @@ I'm not anti-obsidian.
 
 I don't use it for work anymore but I still keep my personal notes on it.
 
-Obsidian is a wonderful lense to observe writing through.
+Obsidian is a wonderful lens to observe writing through.
 
 The obsidian community has put out a ton of great content that's helped me focus
 my own thoughts on note taking.
@@ -272,19 +288,19 @@ quarter).
 
 <!--
 
+I hope among the top 5 are... ergonomics and extensibility!
+
 What skills do you want to get good at?
+
+There's no guarantee that you'll get good at things you practice.
+
+Things you practice are the only things you can improve at.
+
+I don't aspire to be an expert excel technician. I don't want to be a **power
 
 You only get better at what you practice.
 
-I don't care to get great at ppt or excell in the same way I aspire to improve
-my code editing skills.
-
-Powerpoint certainly doesn't share that :D
-
-I hope among the top 5 are... ergonomics and extensibility!
-
-Ok, so why would a dev _not_ want to trick out their editor instead of using
-Obsidian?
+Why would a dev _not_ want to trick out their editor instead of using Obsidian?
 -->
 
 ---
@@ -313,30 +329,6 @@ And they can turbo charge your markdown experience much the same way.
 
 ---
 
-<!--
-_class: lead
--->
-
-# Proximity matters
-
-<!--
-
-Did you know you can click around in ADO to define folder in your monorepo as
-the source of your wiki?
-
-Just because some people read wikis in the browser doesn't mean you should edit
-them there.
-
-If you're using the same tool to write your docs and your code...
-
-Why not put your docs in the same place as your code?
-
-It opens you up to a whole world of possibilities.
-
--->
-
----
-
 # Documentation as code
 
 ## Stuff you may commit via pipelines
@@ -353,10 +345,29 @@ It opens you up to a whole world of possibilities.
 
 <!--
 
+Did you know you can click around in ADO to define folder in your monorepo as
+the source of your wiki?
+
+Just because some people read wikis in the browser doesn't mean you should edit
+them there.
+
+If you're using the same tool to write your docs and your code...
+
+Why not put your docs in the same place as your code?
+
+It opens you up to a whole world of possibilities.
+
 The build pipeline is all about generating artifacts.
 
 It does get a little tricky conceptually to commit to the codebase, but we
 already do that in some instances too.
+
+You are a developer!
+
+You don't need to be beholden to what some tool makes. You can craft custom
+solutions.
+
+You are a developer even when you're doing other things.
 -->
 
 ---
@@ -435,6 +446,46 @@ When you make a website, you write html, but include images, audio, whatever you
 need.
 
 Markdown is just html without the stabby brackets.
+-->
+
+---
+
+# What if, you dynamically update static markdown!?
+
+```markdown
+## Table of MacGuffin
+
+<!-- START GENERATED CONTENT -->
+
+| key  | value |
+| ---- | ----- |
+| foo  | bar   |
+| baz  | qux   |
+| quux | corge |
+
+<!-- END GENERATED CONTENT -->
+
+<!--
+Warning: The above text is generated via scripts from `.assets/_table.md`
+Don't update it manually. Instead run the update script.
+-->
+```
+
+<!--
+I could be happy in a code base that normalized comments like this.
+
+How different is that ergonomically from a code block.
+
+It doesn't take a lot of imagination to see a dataview shaped solution that
+yields human readable source code.
+
+This gets dangerously close to literate code and if you're curious about that,
+let me know because I maybe wouldn't mind a 13th week being a good excuse to
+plunge into that topic.
+
+Documentation full of code that is runnable to, in turn, render portions of
+documentation. A beautiful synergistic fractal of expressiveness.
+
 -->
 
 ---
@@ -525,12 +576,6 @@ from that and embed it in your wiki. ADO Markdown doesn't _need_ to support
 javascript or some bespoke plugin. It supports linking up images.
 
 -->
-
----
-
-# "Plain" text
-
-![noPowerInTheVerseCanStopMe](./assets/noPowerInTheVerseCanStopMe.gif)
 
 ---
 
@@ -679,7 +724,7 @@ it's used in support of at least 3 app's pipelines at this time.
 _class: lead
 -->
 
-# Dude, I don't care to maintain a journal
+# Dude, I don't care to maintain&nbsp;a&nbsp;journal
 
 <!--
 
